@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+  height: 100%;
+}
+html {
+  height: 100%;
+}
+.loadingCode_1 {
+  height: 50%;
+  width: 100%;
+  background-color: #76c4c6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sizeofLoading {
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  animation: 2s rotateDot infinite ease;
+}
+
+.dotLoading {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+@keyframes rotateDot {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(0.5turn);
+  }
+}
