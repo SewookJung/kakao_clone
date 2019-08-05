@@ -1,1 +1,1 @@
-KaKao_Clone Project
+KaKao_Clone Project of theory
