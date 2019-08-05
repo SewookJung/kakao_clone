@@ -5,6 +5,8 @@ body {
 html {
   height: 100%;
 }
+
+/*first Loading Code*/
 .loadingCode_1 {
   height: 50%;
   width: 100%;
@@ -18,7 +20,7 @@ html {
   width: 80px;
   display: flex;
   justify-content: space-between;
-  animation: 2s rotateDot infinite ease;
+  animation: 0.9s rotateDot infinite ease;
 }
 
 .dotLoading {
@@ -30,9 +32,59 @@ html {
 
 @keyframes rotateDot {
   from {
-    transform: rotate(0turn);
+    transform: none;
   }
   to {
     transform: rotate(0.5turn);
+  }
+}
+
+/*Second Loading Code*/
+.loadingCode_2 {
+  height: 50%;
+  width: 100%;
+  background-color: #1eac9c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sizeofLoading_2 {
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.loadingBar {
+  width: 20px;
+  height: 50px;
+  background-color: white;
+  animation: 1s scaleBar infinite ease-in-out;
+}
+
+.loadingBar:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.loadingBar:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.loadingBar:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.loadingBar:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.loadingBar:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+@keyframes scaleBar {
+  0% {
+    transform: none;
+  }
+  30% {
+    transform: scaleY(2);
+  }
+  60% {
+    transform: none;
   }
 }
