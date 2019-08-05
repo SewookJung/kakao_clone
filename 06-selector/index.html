@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>selector</title>
+    <style>
+      /*Styeling by PsedoSlector*/
+      input[required="required"] {
+        background-color: yellow;
+      }
+      input[type="submit"] {
+        background-color: green;
+      }
+
+      /*Styeling by selectors*/
+      .box {
+        background-color: aqua;
+        display: block;
+        height: 100px;
+        border: 1px solid black;
+      }
+      .box:nth-child(3n) {
+        background-color: pink;
+      }
+      .child {
+        background-color: yellow;
+        width: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="box child"></div>
+      </div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+
+      <input type="password" class="password" required="required" />
+      <input type="submit" value="submit" class="submmit" />
+    </div>
+  </body>
+</html>
